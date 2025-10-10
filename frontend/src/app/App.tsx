@@ -1,7 +1,5 @@
-import './App.css';
-
 function App() {
-  return <div>Diagendum</div>;
+  return <div>Diagendum upd</div>;
 }
 
 export default App;
