@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Env
+.env
+*.env.local
+
+# Prisma generated client
+/src/generated/
+
+# SQLite (локальная база)
+*.db
+*.db-journal
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.idea/
+.vscode/
