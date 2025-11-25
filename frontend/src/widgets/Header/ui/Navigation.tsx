@@ -1,12 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import { Paths } from '@/shared/config/paths.ts';
 
-export const Sidebar = () => {
+export const Navigation = () => {
   return (
-    <aside style={{ width: '200px', background: '#2def8f', color: '#000' }}>
+    <aside style={{ color: '#000' }}>
       <nav>
-        <div>Navigation links</div>
-        <ul>
+        <ul className="flex gap-x-4">
           <li>
             <NavLink to={Paths.Planner.Root}>Planner</NavLink>
           </li>
