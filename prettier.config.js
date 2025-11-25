@@ -2,12 +2,12 @@
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
-const config = {
+export default {
   semi: true,
   singleQuote: true,
+  jsxSingleQuote: true,
   trailingComma: 'all',
   printWidth: 100,
   tabWidth: 2,
+  endOfLine: 'lf',
 };
-
-export default config;
