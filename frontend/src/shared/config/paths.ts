@@ -5,6 +5,15 @@ export const Paths = {
     Login: 'login',
     Signup: 'signup',
   },
+  Profile: {
+    Root: 'profile',
+  },
+  Settings: {
+    Root: '/settings',
+  },
+  Search: {
+    Root: '/search',
+  },
   Planner: {
     Root: 'planner',
   },
