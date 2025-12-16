@@ -1,3 +1,5 @@
+import { usersById } from '@/mocks/users.ts';
+
 export const UserMotto = () => {
-  return <div>User Motto Component</div>;
+  return <div>{usersById[1].userMotto}</div>;
 };
