@@ -17,9 +17,9 @@ export const DropdownMenuBase = () => {
           <DropdownMenuItemBase href={Paths.Profile.Root} pageTitle='Profile' />
           <DropdownMenuItemBase href={Paths.Settings.Root} pageTitle='Settings' />
           <DropdownMenuItemBase href={Paths.Search.Root} pageTitle='Search' />
-          <DropdownMenuItemBase asChild pageTitle='Log out'>
-            <LogOut href={Paths.Auth.Login} />
-          </DropdownMenuItemBase>
+          <DropdownMenu.Item asChild>
+            <LogOut />
+          </DropdownMenu.Item>
           <DropdownMenu.Separator className='h-px bg-gray-200 my-1' />
           <SwitchBase />
         </DropdownMenu.Content>

@@ -4,7 +4,7 @@ import type { DropdownMenuItemProps } from '@radix-ui/react-dropdown-menu';
 import { NavLink } from 'react-router-dom';
 
 interface DropdownMenuItemBaseProps {
-  href?: string;
+  href: string;
   pageTitle: string;
   children?: ReactNode;
 }
@@ -17,8 +17,6 @@ export const DropdownMenuItemBase = forwardRef<
 >(({ pageTitle, href, children, ...props }, forwardedRef) => {
   const itemStyles =
     'block w-full cursor-pointer p-2 rounded-md hover:bg-gray-100 outline-none transition-colors duration-150';
-
-  console.log(children);
 
   return (
     <DropdownMenu.Item className={itemStyles} {...props} ref={forwardedRef} asChild>
