@@ -2,14 +2,14 @@ export const Paths = {
   Root: '/',
   Auth: {
     Root: '/auth',
-    Login: 'login',
-    Signup: 'signup',
+    Login: '/auth/login',
+    Signup: '/auth/signup',
   },
   Profile: {
     Root: 'profile',
   },
   Settings: {
-    Root: '/settings',
+    Root: 'settings',
   },
   Search: {
     Root: '/search',
