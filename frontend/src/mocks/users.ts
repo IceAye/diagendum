@@ -1,7 +1,9 @@
 export const usersById = {
   1: {
     id: 1,
-    userName: 'John Smith',
+    firstName: 'John',
+    lastName: 'Smith',
+    username: 'johnny95',
     email: 'john@example.com',
     userMotto: 'Frontend is art 🎨',
     avatar: '/assets/avatar-john.png',
@@ -13,7 +15,9 @@ export const usersById = {
   },
   2: {
     id: 2,
-    userName: 'Jane',
+    firstName: 'Jane',
+    lastName: 'Doe',
+    username: 'silvermoon90',
     email: 'jane@example.com',
     userMotto: 'Keep pushing forward 🚀',
     avatar: '/assets/avatar-jane.png',
