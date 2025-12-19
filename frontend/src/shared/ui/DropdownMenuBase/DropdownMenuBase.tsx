@@ -4,8 +4,12 @@ import { DropdownMenuItemBase } from '@/shared/ui/DropdownMenuItemBase/DropdownM
 import { Paths } from '@/shared/config/paths.ts';
 import { LogOut } from '@/features/logout/ui/LogOut.tsx';
 import { SwitchBase } from '@/shared/ui/SwitchBase/SwitchBase.tsx';
+import { usersById } from '@/mocks/users.ts';
+import { UserInfoBlock } from '@/widgets/Header/ui/UserInfoBlock.tsx';
 
 export const DropdownMenuBase = () => {
+  const user = usersById[1];
+
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
@@ -14,6 +18,7 @@ export const DropdownMenuBase = () => {
       <DropdownMenu.Portal>
         <DropdownMenu.Content className='bg-white w-48 z-50 text-black rounded-lg shadow-lg p-2'>
           <DropdownMenu.Arrow className='fill-white' />
+          <UserInfoBlock firstName={user.firstName} lastName={user.lastName} email={user.email} />
           <DropdownMenuItemBase href={Paths.Profile.Root} pageTitle='Profile' />
           <DropdownMenuItemBase href={Paths.Settings.Root} pageTitle='Settings' />
           <DropdownMenuItemBase href={Paths.Search.Root} pageTitle='Search' />
