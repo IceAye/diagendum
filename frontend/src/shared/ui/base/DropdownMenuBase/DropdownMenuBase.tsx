@@ -1,9 +1,9 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import { DropdownMenuItemBase } from '@/shared/ui/DropdownMenuItemBase/DropdownMenuItemBase.tsx';
+import { DropdownMenuItemBase } from '@/shared/ui/base/DropdownMenuItemBase/DropdownMenuItemBase.tsx';
 import { Paths } from '@/shared/config/paths.ts';
 import { LogOut } from '@/features/logout/ui/LogOut.tsx';
-import { SwitchBase } from '@/shared/ui/SwitchBase/SwitchBase.tsx';
+import { SwitchBase } from '@/shared/ui/base/SwitchBase/SwitchBase.tsx';
 import { usersById } from '@/mocks/users.ts';
 import { UserInfoBlock } from '@/widgets/Header/ui/UserInfoBlock.tsx';
 

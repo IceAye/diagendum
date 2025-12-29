@@ -1,5 +1,5 @@
-import { AvatarBase } from '@/shared/ui/AvatarBase/AvatarBase.tsx';
-import { DropdownMenuBase } from '@/shared/ui/DropdownMenuBase/DropdownMenuBase.tsx';
+import { AvatarBase } from '@/shared/ui/base/AvatarBase/AvatarBase.tsx';
+import { DropdownMenuBase } from '@/shared/ui/base/DropdownMenuBase/DropdownMenuBase.tsx';
 
 export const ProfileMenu = () => {
   return (

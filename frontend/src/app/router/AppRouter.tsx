@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { MainLayout } from '@/app/layouts/MainLayout/MainLayout.tsx';
-import { PlannerPage } from '@/pages/PlannerPage/PlannerPage.tsx';
+import { PlannerPage } from '@/pages/PlannerPage/ui/PlannerPage.tsx';
 import { DiaryPage } from '@/pages/DiaryPage/DiaryPage.tsx';
 import { HabitsPage } from '@/pages/HabitsPage/HabitsPage.tsx';
 import { ListsPage } from '@/pages/ListsPage/ListsPage.tsx';
