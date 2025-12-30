@@ -1,6 +1,5 @@
 import { Tabs } from '@/shared/ui/base/Tabs.tsx';
-
-type ViewMode = 'week' | 'month' | 'year';
+import type { ViewMode } from '@/pages/PlannerPage/lib/planner.types.ts';
 
 type Props = {
   viewMode: ViewMode;
