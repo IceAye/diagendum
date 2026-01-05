@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ViewMode } from '@/pages/PlannerPage/lib/planner.types.ts';
 import { PlannerTabs } from '@/pages/PlannerPage/ui/PlannerTabs.tsx';
+import { MotivationQuote } from '@/features/motivationQuote/ui/MotivationQuote.tsx';
 
 export const PlannerPage = () => {
   const [currentViewMode, setCurrentViewMode] = useState<ViewMode>('week');
@@ -10,9 +11,9 @@ export const PlannerPage = () => {
   };
 
   return (
-    <>
-      <h1>Planner page</h1>
+    <div className='flex justify-between'>
       <PlannerTabs viewMode={currentViewMode} onChange={handleTabChange} />
-    </>
+      <MotivationQuote />
+    </div>
   );
 };
